@@ -1,0 +1,30 @@
+<div class="container-fluid padd-zero">
+	<div class="bg-cover-1"></div>
+	<form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)" class="form-signin" autocomplete="off" novalidate>
+        <h1 class="form-signin-heading h1">Login <i class="fa fa-user-circle fa-1" aria-hidden="true"></i>
+</h1>
+        <div class="form-group" [ngClass]="{'has-error': !(userEmail.valid || userEmail.pristine)}">
+	        <label for="inputEmail" class="sr-only">Email address</label>
+	        <input (ngModel)="userEmail" name="userEmail" type="email" id="userEmail" class="form-control" placeholder="Email address" required email #userEmail="ngModel" autofocus>
+	        <span *ngIf="!(userEmail.valid || userEmail.pristine)" class="help-block">
+			   <ul class="list-unstyled">
+			   <li [hidden]="!userEmail.hasError('required')">Email is required</li>
+			   <li [hidden]="!userEmail.hasError('email')">Email format should be 
+			      <small><b>joe@abc.com</b></small>
+			   </li>
+			   </ul>
+			</span>
+        </div>
+        <div class="form-group">
+	        <label for="inputPassword" class="sr-only">Password</label>
+	        <input (ngModel)="userPassword" name="userPassword" type="Password" id="userPassword" class="form-control" placeholder="Password" #userPassword="ngModel" required>
+        </div>
+        <!-- <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div> -->
+        
+        <button class="btn btn-lg btn-primary btn-block" [disabled]="loginForm.form.invalid" type="submit">Sign in</button>
+    </form>   
+</div> <!-- /container -->

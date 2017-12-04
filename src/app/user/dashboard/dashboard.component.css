@@ -1,0 +1,23 @@
+.widget-box{
+  background: #242c35;
+  border-left: 10px solid #313b47;
+}
+
+.widget-box .title{
+  color: #985eff;
+}
+
+.project-create-link{
+  padding: 20px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.project-create-link a {
+  color: #985eff;
+  text-decoration: none;
+}
+
+.project-create-link a:hover,.project-create-link a:focus {
+  color: #8142fd;
+}

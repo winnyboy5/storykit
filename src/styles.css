@@ -1,0 +1,90 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*
+	Theme colors
+	Black - #242c35
+	Grey - #313b47
+	Purle Medium - #8142fd
+	Purple Light - #985eff
+	Purple Pale - #988bc8
+	Pink - #ff0173
+	Yellow - #ffe900
+	Teal - #33dbc6
+	orange - #ff8549
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,500,600,700');
+
+html, body {
+    height:100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Barlow', sans-serif;
+	background: #313b47;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.h1::after, .h2::after, .h3::after, h1::after, h2::after, h3::after {
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    left: 3px;
+    bottom: -10px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #8142fd;
+    border-color: #8142fd;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #985eff;
+    border-color: #985eff;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #985eff;
+    border-color: #985eff;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #985eff;
+    border-color: #985eff;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #985eff;
+    border-color: #985eff;
+}
+
+.btn-primary.disabled.focus, .btn-primary.disabled:focus, .btn-primary.disabled:hover, .btn-primary[disabled].focus, .btn-primary[disabled]:focus, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary:hover {
+    background-color: #985eff;
+    border-color: #985eff;
+}
+
+.form-control{
+	border-radius: 2px;
+}
+
+.form-control:focus {
+    border-color: #988BC8;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(152,139,200,.6);
+}
