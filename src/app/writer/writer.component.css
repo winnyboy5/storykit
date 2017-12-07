@@ -1,0 +1,65 @@
+.writer-canvas {
+	width: 100%;
+}
+
+.writer-page{
+	position: relative;
+    max-width: 8.5in;
+    margin: 0 auto 30px auto;
+    font-family: "Courier 10 Pitch", "Courier New", monospace;
+    font-size: 16px;
+    line-height: 17px;
+}
+
+.dark-mode {
+	background: #22222c;
+    color: #fff;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.3)
+}
+
+.title-page {
+	padding: 1in 0;
+}
+
+.script-title {
+	display: table-cell;
+    vertical-align: middle;
+}
+
+textarea {
+	width: 100%;
+    border: 0px solid;
+    user-select: text;
+    flex-direction: column;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: center;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    outline: none;
+    resize: none;
+}
+
+.title-textarea {
+	border: 0;
+    font-family: "Courier 10 Pitch", "Courier New", monospace;
+    background: #22222c;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.title-padder {
+	padding-left: 11.76471%;
+	padding-right: 11.76471%;
+}
+
+.by-margin {
+	margin: 1.5em 0;
+}

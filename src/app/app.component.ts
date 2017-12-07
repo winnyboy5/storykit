@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { AuthService } from './user/auth.service';
 import { Router } from '@angular/router';
+import { FormsModule }   from '@angular/forms'; 
 declare var $: any;
 declare var jquery: any;
 

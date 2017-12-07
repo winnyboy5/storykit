@@ -17,6 +17,8 @@ import { HeaderNavComponent } from './header-nav/header-nav.component';
     RouterModule.forChild(userRoutes)
   ],
   declarations: [LoginComponent, DashboardComponent, HeaderNavComponent],
-  providers: [AuthService]
+  providers: [AuthService],
+  exports: [HeaderNavComponent]
 })
+
 export class UserModule { }

@@ -16,6 +16,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,400i,500,600,700');
 
+@font-face {
+    font-family: "Courier 10 Pitch", "Courier New", monospace;
+    src: url(assets/fonts/Courier_10_Pitch_Regular.otf);
+}
+
 html, body {
     height:100%;
 }
@@ -25,7 +30,13 @@ body{
 	padding: 0;
 	color: #fff;
 	font-family: 'Barlow', sans-serif;
-	background: #313b47;
+	background: #282A37;
+	height: 100%;
+    position: relative;
+}
+
+#wrapper {
+  height: 100%;
 }
 
 .h1, .h2, .h3, h1, h2, h3 {

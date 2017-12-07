@@ -3,8 +3,8 @@
 }
 
 .navbar-default {
-    background-color: #242c35;
-    border-color: #242c35;
+    background-color: #22222C;
+    border-color: #22222C;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -27,7 +27,7 @@
 }
 
 .navbar-nav>li>.dropdown-menu {
-	background-color: #242c35;
+	background-color: #22222C;
 }
 
 .dropdown-menu>li>a {
