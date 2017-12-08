@@ -1,25 +1,23 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { UserModule } from './user/user.module';
-import { FormsModule }   from '@angular/forms'; 
+import { WriterModule } from './writer/writer.module';  
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AuthService } from './user/auth.service';
-import { WriterComponent } from './writer/writer.component';
+
 
 
 
 @NgModule({
   declarations: [
-    AppComponent,
-    WriterComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UserModule,
-    FormsModule
+    UserModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

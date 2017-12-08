@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any;
+declare var jquery: any;
+
 @Component({
   selector: 'app-writer',
   templateUrl: './writer.component.html',
@@ -8,7 +11,8 @@ import { Component, OnInit } from '@angular/core';
 export class WriterComponent implements OnInit {
   
   scriptTitle:string;
-  numerOfRowsInText:any;
+  numerOfRowsInText:number;
+
   constructor() { 
   	this.scriptTitle = '';
   }
@@ -17,8 +21,7 @@ export class WriterComponent implements OnInit {
   }
 
   countLines(event) {
-  	  //console.log(this.scriptTitle);
-	  //console.log(event);
+  	
   }
 
 }

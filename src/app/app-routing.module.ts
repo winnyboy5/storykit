@@ -5,7 +5,7 @@ import { WriterComponent } from './writer/writer.component';
 const routes: Routes = [
   { path: '', redirectTo: '/user/dashboard', pathMatch: 'full' },
   { path: 'user', loadChildren: 'app/user/user.module#UserModule'},
-  { path: 'writer', component:WriterComponent }
+  { path: 'writer', loadChildren: 'app/writer/writer.module#WriterModule'}
 ];
 
 @NgModule({

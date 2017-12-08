@@ -8,7 +8,7 @@
     margin: 0 auto 30px auto;
     font-family: "Courier 10 Pitch", "Courier New", monospace;
     font-size: 16px;
-    line-height: 17px;
+    line-height: 18px;
 }
 
 .dark-mode {
@@ -46,6 +46,7 @@ textarea {
 
 .title-textarea {
 	border: 0;
+	height:18px;
     font-family: "Courier 10 Pitch", "Courier New", monospace;
     background: #22222c;
     outline: none;
@@ -53,6 +54,7 @@ textarea {
     resize: none;
     text-align: center;
     vertical-align: middle;
+    line-height: 18px;
 }
 
 .title-padder {
