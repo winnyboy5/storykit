@@ -18,13 +18,38 @@
 }
 
 .title-page {
-	padding: 1in 0;
+	padding: 1in 1in;
 }
 
-.script-title {
-	display: table-cell;
-    vertical-align: middle;
+.title-block, .address-block, .copyright-block  {
+	display: table;
+	width: 100%;
+  height: 100%;
 }
+
+.address-block {
+	margin-top: 3in;
+}
+
+.script-title,.script-address, .script-copyright {
+	display: table-cell;
+    width: 100%;
+}
+
+.script-title{
+	vertical-align: middle;
+}
+
+.script-address {
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.script-copyright{
+	text-align: center;
+	vertical-align: bottom;
+}
+ 
 
 textarea {
 	width: 100%;

@@ -11,17 +11,15 @@ declare var jquery: any;
 export class WriterComponent implements OnInit {
   
   scriptTitle:string;
+  scriptAuthor:string;
   numerOfRowsInText:number;
 
   constructor() { 
   	this.scriptTitle = '';
+  	this.scriptAuthor = '';
   }
 
   ngOnInit() {
-  }
-
-  countLines(event) {
-  	
   }
 
 }

@@ -39,7 +39,6 @@ export class AutoHeightDirective {
 		if(resetHeight !== (0 || null)){
 			this.el.nativeElement.style.height = resetHeight +"px";
 			this.setHeight();
-			console.log(lines.length +':'+ resetHeight);
 		}
         
 	}

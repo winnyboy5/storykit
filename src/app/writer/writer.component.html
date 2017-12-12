@@ -4,9 +4,25 @@
 		<div class="writer-canvas">
 			<div class="writer-page dark-mode">
 					<div class="title-page">
-						<textarea row="1" id="titleArea" name="title" [(ngModel)]="scriptTitle" (keypress)="countLines($event)" maxlength="123" spellcheck="false" class="title-textarea title-padder" placeholder="Title" appAutoHeight defHeight="18"></textarea>
-						<p class="title-padder text-center by-margin">by</p>
-						<textarea name="author" maxlength="123" spellcheck="false" class="title-textarea title-padder" placeholder="Author"></textarea>
+						<div class="title-block">
+							<div class="script-title">
+								<textarea row="1" id="titleArea" name="title" [(ngModel)]="scriptTitle" maxlength="123" spellcheck="false" class="title-textarea title-padder" placeholder="Title" appAutoHeight defHeight="18"></textarea>
+								<p class="title-padder text-center by-margin">Written by</p>
+								<textarea row="1" id="authorArea" name="author" [(ngModel)]="scriptAuthor" maxlength="123" spellcheck="false" class="title-textarea title-padder" placeholder="Author" appAutoHeight defHeight="18"></textarea>
+							</div>
+						</div>
+						<div class="address-block">
+							<div class="script-address">
+								asdasdasdasdasdasdas<br>
+								asdasd<br>
+								asd<br>
+							</div>
+						</div>
+						<div class="copyright-block">
+							<div class="script-copyright">
+								asdasdasdasdasdasdas<br>
+							</div>
+						</div>
 					</div>
 			</div>
 		</div>
