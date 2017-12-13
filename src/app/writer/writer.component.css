@@ -8,30 +8,33 @@
     margin: 0 auto 30px auto;
     font-family: "Courier 10 Pitch", "Courier New", monospace;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 17px;
 }
 
 .dark-mode {
 	background: #22222c;
     color: #fff;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.3)
+    box-shadow: 0 0 4px 0 rgba(180,180,180,0.3)
 }
 
 .title-page {
 	padding: 1in 1in;
 }
 
-.title-block, .address-block, .copyright-block  {
+.title-block {
 	display: table;
 	width: 100%;
   height: 100%;
 }
 
-.address-block {
-	margin-top: 3in;
+.v-spacing {
+    padding: 1in 0px;
 }
 
-.script-title,.script-address, .script-copyright {
+.v-spacing-half {
+    padding: 0.5in 0px;
+}
+.script-title,.script-address, .script-copyright, .script-revisions {
 	display: table-cell;
     width: 100%;
 }
@@ -41,6 +44,11 @@
 }
 
 .script-address {
+	text-align: left;
+	vertical-align: bottom;
+}
+
+.script-revisions {
 	text-align: right;
 	vertical-align: bottom;
 }
@@ -48,6 +56,14 @@
 .script-copyright{
 	text-align: center;
 	vertical-align: bottom;
+}
+
+.script-canvas {
+    min-height: 11in;
+    margin: auto;
+    max-width: 8.5in;
+    padding-top: 1in;
+    padding-bottom: 1in;
 }
  
 
@@ -77,10 +93,22 @@ textarea {
     outline: none;
     overflow: hidden;
     resize: none;
-    text-align: center;
     vertical-align: middle;
     line-height: 18px;
 }
+
+.title-center {
+	text-align: center;
+}
+
+.title-right {
+	text-align: right;
+}
+
+.title-left {
+	text-align: left;
+}
+
 
 .title-padder {
 	padding-left: 11.76471%;
@@ -89,4 +117,66 @@ textarea {
 
 .by-margin {
 	margin: 1.5em 0;
+}
+
+.screenPlay-p {
+
+}
+
+.script-canvas .screenPlay-p:first-child .script_elem:first-child {
+    margin-top: 0;
+}
+
+.script_elem:not(.w-parenthetical):not(.w-dialogue):not(.w-scene) {
+    margin-top: 1em;
+}
+
+.script_elem {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.w-transition {
+    margin-left: 64.70588%;
+    margin-right: 11.76471%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.script_elem.w-scene {
+    margin-top: 2em;
+}
+
+.w-scene {
+    margin-left: 17.64706%;
+    margin-right: 11.76471%;
+    text-transform: uppercase;
+}
+
+.w-character {
+    margin-left: 41.17647%;
+    margin-right: 14.70588%;
+    text-transform: uppercase;
+}
+
+.w-dialogue {
+    margin-left: 29.41176%;
+    margin-right: 29.41176%;
+}
+
+.w-action {
+    margin-left: 17.64706%;
+    margin-right: 11.76471%;
+}
+
+.w-continued:after {
+    content: "(CONT'D)";
+    color: #999999;
+    position: absolute;
+    right: 0.5em;
+}
+
+.w-parenthetical {
+    margin-left: 35.29412%;
+    margin-right: 35.29412%;
 }

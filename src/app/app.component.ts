@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 import { AuthService } from './user/auth.service';
 import { Router } from '@angular/router';
 
-declare var $: any;
-declare var jquery: any;
+declare let $: any;
 
 @Component({
   selector: 'app-root',

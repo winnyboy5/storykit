@@ -6,24 +6,70 @@
 					<div class="title-page">
 						<div class="title-block">
 							<div class="script-title">
-								<textarea row="1" id="titleArea" name="title" [(ngModel)]="scriptTitle" maxlength="123" spellcheck="false" class="title-textarea title-padder" placeholder="Title" appAutoHeight defHeight="18"></textarea>
-								<p class="title-padder text-center by-margin">Written by</p>
-								<textarea row="1" id="authorArea" name="author" [(ngModel)]="scriptAuthor" maxlength="123" spellcheck="false" class="title-textarea title-padder" placeholder="Author" appAutoHeight defHeight="18"></textarea>
+								<textarea row="1" id="titleArea" name="title" [(ngModel)]="scriptTitle" maxlength="123" spellcheck="false" class="title-textarea title-center title-padder" placeholder="Title" appAutoHeight defHeight="17"></textarea>
+								<p class="title-padder text-center by-margin">written by</p>
+								<textarea row="1" id="authorArea" name="author" [(ngModel)]="scriptAuthor" maxlength="123" spellcheck="false" class="title-textarea title-center title-padder" placeholder="Author" appAutoHeight defHeight="17"></textarea>
 							</div>
 						</div>
-						<div class="address-block">
+						<div class="title-block v-spacing-half">
+							<div class="script-basedOn">
+								<textarea row="1" id="basedOn" name="basedOn" [(ngModel)]="scriptBasedOn" maxlength="123" spellcheck="false" class="title-textarea title-center title-padder" placeholder="Based on if any" appAutoHeight defHeight="17"></textarea>
+							</div>
+						</div>
+						<div class="title-block v-spacing-half">
+							<div class="script-revisions">
+								<ul class="list-unstyled" *ngFor="let revision of revisions">
+									<li>{{revision.r_color}}:   
+									<span *ngIf="multipleAuthors">{{revision.name}}</span>
+									({{revision.date}})</li>
+								</ul>
+							</div>
+						</div>
+						<div class="title-block">
 							<div class="script-address">
-								asdasdasdasdasdasdas<br>
-								asdasd<br>
-								asd<br>
+								<textarea row="1" id="address" name="address" [(ngModel)]="scriptAddress" maxlength="123" spellcheck="false" class="title-textarea title-left title-padder" placeholder="Address" appAutoHeight defHeight="17"></textarea>
 							</div>
 						</div>
-						<div class="copyright-block">
+						<!-- <div class="title-block">
 							<div class="script-copyright">
-								asdasdasdasdasdasdas<br>
+								<textarea row="1" id="copyright" name="copyright" [(ngModel)]="scriptAddress" maxlength="123" spellcheck="false" class="title-textarea title-left title-padder" placeholder="Address" appAutoHeight defHeight="17"></textarea>
 							</div>
-						</div>
+						</div> -->
 					</div>
+			</div>
+
+			<div class="writer-page dark-mode">
+				<div class="script-canvas" appScriptPager>
+					<div class="screenPlay-p">
+						<div class="script_elem w-transition">Fade to:</div>
+						<div class="script_elem w-scene">Int. Some Room - Day</div>
+						<div class="script_elem w-character">Mano (V.O)</div>
+						<div class="script_elem w-dialogue">Life is a riddle which we have to spend a life to solve.</div>
+						<div class="script_elem w-action">A guy was lying on the ground with his face sticking to the Ground and blood gushing out of his mouth. He is Elango.</div>
+						<div class="script_elem w-character w-continued">Mano (V.O)</div>
+						<div class="script_elem w-dialogue">Sometimes it won't be solved.</div>
+						<div class="script_elem w-action">His face lifted from the ground,he has been tied to a chair. One hand pulled him up by pulling the back of the chair. The hand placed the chair in its normal position.</div>
+						<div class="script_elem w-character w-continued">MANO (V.O)</div>
+						<div class="script_elem w-dialogue">Sometimes we regret solving it.</div>
+						<div class="script_elem w-action">The guy who pulled the chair went around Elango and came to his front. His shadow overlaid over Elango.</div>
+						<div class="script_elem w-transition">Cut To Black:</div>
+						<div class="script_elem w-transition">Cut To:</div>
+						<div class="script_elem w-scene">E/I Mano's house - Morning</div>
+						<div class="script_elem w-action">Ramesh knocked at the front door. Chandini was standing behind him. The door opened slowly, Ramesh and Chandini couldn't find anyone at the door. Mano entered from behind the door.</div>
+						<div class="script_elem w-character">Mano</div>
+						<div class="script_elem w-parenthetical">(with sleepy eyes)</div>
+						<div class="script_elem w-dialogue">What's up?</div>
+						<div class="script_elem w-character">Ramesh</div>
+						<div class="script_elem w-dialogue">Can we go inside and talk?</div>
+						<div class="script_elem w-character">Mano</div>
+						<div class="script_elem w-dialogue">Yes come in.</div>
+						<div class="script_elem w-action">Mano moved to the hall. Ramesh and Chandini followed him to the hall. Mano sat down in a chair and Ramesh and CHANDINI sat in the sofa opposite to him.</div>
+						<div class="script_elem w-character">RaMESH</div>
+						<div class="script_elem w-dialogue">By the way this is Chandini friend of mine. She needs your help.</div>
+						<div class="script_elem w-character" data-pagenumber="2">Mano</div>
+						<div class="script_elem w-dialogue">What can I help with?</div>
+					</div>
+				</div>
 			</div>
 		</div>
 </div>

@@ -8,6 +8,8 @@ import { writerRoutes } from './writer.routes';
 
 import { WriterComponent } from './writer.component';
 import { AutoHeightDirective } from './auto-height.directive';
+import { ScriptPagerDirective } from './script-pager.directive';
+
 
 @NgModule({
   imports: [
@@ -18,7 +20,8 @@ import { AutoHeightDirective } from './auto-height.directive';
   ],
   declarations: [
   	WriterComponent,
-  	AutoHeightDirective
+  	AutoHeightDirective,
+  	ScriptPagerDirective
   ]
 })
 export class WriterModule { }
