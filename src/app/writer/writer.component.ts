@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 declare let $: any;
 
 @Component({
@@ -14,6 +15,7 @@ export class WriterComponent implements OnInit {
   scriptAddress:string;
   scriptBasedOn:string;
   revisions:Array<Object>;
+  scriptContent:string;
   multipleAuthors:boolean  = false;
   numerOfRowsInText:number;
 
@@ -52,6 +54,8 @@ export class WriterComponent implements OnInit {
         'date': '10/11/2017'
       }
     ];
+
+
   }
 
 }

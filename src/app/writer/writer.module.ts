@@ -4,11 +4,14 @@ import { FormsModule }   from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { UserModule } from './../user/user.module';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
+
 import { writerRoutes } from './writer.routes';
 
 import { WriterComponent } from './writer.component';
 import { AutoHeightDirective } from './auto-height.directive';
-import { ScriptPagerDirective } from './script-pager.directive';
+import { ScriptCanvasComponent } from './script-canvas/script-canvas.component';
+
 
 
 @NgModule({
@@ -16,12 +19,14 @@ import { ScriptPagerDirective } from './script-pager.directive';
     CommonModule,
     FormsModule,
     UserModule,
-    RouterModule.forChild(writerRoutes)
+    RouterModule.forChild(writerRoutes),
+    FroalaEditorModule.forRoot(), 
+    FroalaViewModule.forRoot()
   ],
   declarations: [
   	WriterComponent,
   	AutoHeightDirective,
-  	ScriptPagerDirective
+  	ScriptCanvasComponent
   ]
 })
 export class WriterModule { }

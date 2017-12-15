@@ -1,0 +1,69 @@
+.screenPlay-p {
+
+}
+
+.script-canvas {
+    min-height: 11in;
+    margin: auto;
+    max-width: 8.5in;
+    padding-top: 1in;
+    padding-bottom: 1in;
+}
+
+.script-canvas .screenPlay-p:first-child .script_elem:first-child {
+    margin-top: 0;
+}
+
+.script_elem:not(.w-parenthetical):not(.w-dialogue):not(.w-scene) {
+    margin-top: 1em;
+}
+
+.script_elem {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.script_elem.w-transition {
+    margin-left: 64.70588%;
+    margin-right: 11.76471%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.script_elem .w-scene {
+    margin-top: 2em;
+}
+
+.w-scene {
+    margin-left: 17.64706%;
+    margin-right: 11.76471%;
+    text-transform: uppercase;
+}
+
+.w-character {
+    margin-left: 41.17647%;
+    margin-right: 14.70588%;
+    text-transform: uppercase;
+}
+
+.w-dialogue {
+    margin-left: 29.41176%;
+    margin-right: 29.41176%;
+}
+
+.w-action {
+    margin-left: 17.64706%;
+    margin-right: 11.76471%;
+}
+
+.w-continued:after {
+    content: "(CONT'D)";
+    color: #999999;
+    position: absolute;
+    right: 0.5em;
+}
+
+.w-parenthetical {
+    margin-left: 35.29412%;
+    margin-right: 35.29412%;
+}
